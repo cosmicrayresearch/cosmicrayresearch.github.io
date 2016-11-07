@@ -1,0 +1,126 @@
+.link{
+	background: none; 
+	padding-right :5%;
+	padding-left: 5%;
+	margin: 0;
+	font-family: Verdana, Geneva, sans-serif;
+}
+
+a{
+	border: 0;
+	font-family: Verdana, Geneva, sans-serif;
+	
+	}
+
+.link:hover{
+	background-color: rgba(0,0,0,0.25) !important;
+}
+
+
+.content{
+	color: #000 !important;
+	max-height: 95%;
+	max-width: 60%;
+	border-radius: 10px;
+	margin: auto;
+	min-height: 30%;
+	width: 80%;
+	background-color: #fff;
+	text-align: center;
+	box-shadow: 15px 15px 10px rgba(50,50,50,0.5);
+	font-family:Verdana, Geneva, sans-serif;
+}
+
+.black{
+	color: #000;
+}
+
+.left{
+	text-align: left;
+}
+
+.left-button{
+	margin: 0;
+}
+
+#container { 
+/* Found at
+	https://www.flickr.com/photos/lukepeterson/sets/72157626174470581*/
+
+	background: url(../img/bg.jpg) no-repeat center center fixed; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  min-height: 100%;
+  color: #fff;
+  padding: 5%;
+  font-family: Verdana, Geneva, sans-serif;
+  font-weight: bold !important;
+}
+
+h1{
+font-weight: bold;
+}
+
+#title{
+	width: 70%;
+	padding-bottom: 7%;
+	font-weight: bold !important;
+}
+
+.panel{
+	width: 100%;
+}
+
+#navbar{
+	padding: 2%;
+	width:70%;
+	font-size: 25px;
+	text-align: center;
+	margin: 0 auto;
+	font-family: Verdana, Geneva, sans-serif;
+}
+
+#navbar a{
+	color: #fff !important;
+	text-decoration: none;
+	display: inline;
+}
+
+#navbar a:hover{
+	color: #d1d1d1;
+	text-decoration: none !important;
+}
+
+.navbardata{
+	width: 30%;
+	font-family: Verdana, Geneva, sans-serif;
+}
+
+.container {
+	margin: 0;
+	padding: 0;
+	font-family: Verdana, Geneva, sans-serif;
+
+}
+
+#sitecredit{
+
+	position: fixed;
+	bottom: 50px;
+	right:50px;
+	opacity: 0.5;
+	color: #fff;
+
+}
+
+#imgcredit{
+
+	position: fixed;
+	bottom: 50px;
+	left:  50px;
+	opacity: 0.2;
+	color: #fff;
+
+}

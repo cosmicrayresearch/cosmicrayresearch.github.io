@@ -233,38 +233,17 @@
         We are looking at data collected from our own detector as well as many others, and are collecting data on many different types of solar weather such as solar wind, coronal mass ejections, and sunspots.
     </p>
     <hr>
-    <h4>Analysing data</h4>
-    <br>
     <p>
-        When we were looking at data for the actvity of solar wind (a type of solar weather) one member of our team (Laurence Dhonau) came up with a spreadsheet to help us analyse it.
-        You can download it <a href = "Solar%20Wind%20and%20Cosmic%20Ray%20Data%20Comparison.xlsm" id = "spreadsheet"> here.</a>
-    </p>
-    <br>
-    <h4><small>How to use it?</small></h4>
-    <p>
-        You can automatically update the data by pressing the button that says "Update Cosmic Ray Data"<br>
-    </p>
-    <img src = "img/update%20cosmic%20ray%20data.JPG" style = "max-width:50%;" alt = "Image of Update Cosmic Ray Data Button">
-    <br>
-    <p>
-        which gathers the data directly from hisparc.
-        You can look at the data from a particular day by entering a date to match the date from the solar wind file
-        In order to see the solar wind data, you need a certain type of file, such as <a href = "ftp://ftp.swpc.noaa.gov/pub/lists/ace2/201607_ace_swepam_1h.txt"> this one</a> or <a href = "ftp://ftp.swpc.noaa.gov/pub/lists/ace/ace_swepam_1m.txt">this one.</a>
-        <br>
-        Then you just have to press the button that says "Update Solar Wind Data"
-    </p>
-    <img src = "img/update%20solar%20wind%20data.JPG" style = "max-width:50%;" alt = "Image of Update Solar Wind Data Button">
-    <br>
-    <p>
-        and it would then plot it against a graph.
-    <br>
-    </p>
-    <div class="lead">
-        <p>
-            <strong> 
-                If you ever get a sudden dip of  -9999.9, press the dropdown button next to "Proton Density" and uncheck the  -9999.9
-            </strong>
-        </p>
+The first thing we did, in trying to determine a correlation between the bulk speed of solar wind and cosmic ray coincidences, was to see if there was a simple visual correlation between the data. We did this in Excel. It quickly became clear that this was impractical due to the fact that we were trying to compare the solar wind as an hourly average  with every cosmic ray coincidence, which was very difficult logistically; Technical issues regarding the amount of data such as, taking far too long to copy columns, and a maximum column size of 2 million rows; and the data only being for one day at a time, meaning it is very slow to get the necessary amount of data. <br>
+We solved this problem by developing a python script that managed the data downloading and formatting, so we could simply copy this into Excel and determine a correlation using a graph. 
+</p>
+<img src = "img/corell.jpg" style = "max-width:50%;" alt = "Graph showing the relationship between cosmic ray count and solar wind bulk speed">
+<br>
+<p>
+As you can see, there is no clear correlation, and when further analysed, we found a correlation coefficient of only 0.0782171814.<br>
+We next analysed the data in another python script, and found that there was a huge statistical significance of up to 10 standard deviations. After repeating this test for multiple 3-month periods at different detectors, we can almost conclusively say that these results did not happen by coincidence.<br>
+We hope to later continue the research to find the relationship between these two sets of data.
+</p>
     </div>
   </div>
   </div>
@@ -296,11 +275,11 @@
         As a group we are looking to see if we can track the origins of the solar rays. We are looking for coincidences across detectors across the world as well as our own and are calculating the angle of the rays, letting us find the origin.
       </p>
       <hr>
-      <h4>Method</h4>
-      We investigated potential sources of cosmic rays, using HiSPARC
-We calculated the angles at which individual cosmic rays  entered the Earth's atmosphere and used these to locate potential sources in space
-The equations used to calculate the angles are unique; work in the ECEF coordinate system, allowing more than 3 detectors to be used for angle calculation; and were devised by Dr Michael McEllin
-Initial data analysis has begun but we have not reached a conclusion
+      <p>
+      We investigated potential sources of cosmic rays, using HiSPARC data. <br>
+We calculated the angles at which individual cosmic rays  entered the Earth's atmosphere and used these to locate potential sources in space<br>
+The equations used to calculate the angles are unique and work in the ECEF coordinate system, allowing more than 3 detectors to be used for angle calculation.They were devised by Dr Michael McEllin<br>
+        Initial data analysis has begun but we have not reached a conclusion</p>
     </div>
   </div>
   </div>
